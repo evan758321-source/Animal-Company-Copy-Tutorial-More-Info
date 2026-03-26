@@ -22,14 +22,10 @@ Protogen - Adding to guide
 - Then make 2 new folders named "files" and then inside the files folder make a new one called "gamedata" (without quotations for both) and make sure to put your update zip in there
 - and make sure you change it in the backend too! (default is zombie update) (or ask ai to do it for you idfc)
 
-- Or go to /native-lib patch native-lib.cpp for your url and recompile (THIS IS THE ONLY WAY TO DO IT ON NEWER VERSIONS PAST LAVA)
+- Or go to [Fixed native lib](https://github.com/evan758321-source/Animal-Company-Copy-Tutorial-actually-good/releases/tag/works) and change the backend.
 
-4. Auth
-- For your servers to work you need to change photonappsettings in assets/bin/data/globalgamemanagers
-- Replace the first with a Photon Fusion 2 app id and the second with a Photon Voice app id
-- Save that
 
-4.1. Inject App ID
+4. Inject App ID
 - Open assets/bin/data/globalgamemanagers in UABEA
 - Ctrl+F: OculusPlatformSettings ? Extract as raw
 - Open extracted .dat in HxD
@@ -54,7 +50,7 @@ Protogen - Adding to guide
 - Upload to App Lab
 
 8. Fix Gamedata
-- In the backend there is still xevas link (that is down) so change that to yours (link: https://xeracompany.pythonanywhere.com/game-data-prod.zip)
+- In the backend there is still N5's link (that is down) so change that to yours (link: https://github.com/evan758321-source/Animal-Company-Copy-Tutorial-actually-good/raw/refs/heads/main/game-data/Zombie%20Update.zip)
 
 9. Unobfuscate
 - i did this step for you!
