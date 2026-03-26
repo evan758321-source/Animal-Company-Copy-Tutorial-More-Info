@@ -12,17 +12,19 @@ Protogen - Adding to guide
 2. Decompile APK
 - Use APKToolGUI or similar to unpack
 
-3. Patch Server URL
+3. Patch Server URL (WILL NOT WORK PAST LAVA UPD!)
 - Open global-metadata.dat in MetaDataStringEditor
 - Ctrl+F:
   https://animalcompany.us-east1.nakamacloud.io
+
+  
 - Replace with:
   Your hosted backend url if self hosting
 - For free hosting go to "pythonanywhere.com" and then make an app and make sure you choose flask and the latest python
 - Then make 2 new folders named "files" and then inside the files folder make a new one called "gamedata" (without quotations for both) and make sure to put your update zip in there
 - and make sure you change it in the backend too! (default is zombie update) (or ask ai to do it for you idfc)
-
-- Or go to [Fixed native lib](https://github.com/evan758321-source/Animal-Company-Copy-Tutorial-actually-good/releases/tag/works) and change the backend.
+ - go to [Fixed native lib](https://github.com/evan758321-source/Animal-Company-Copy-Tutorial-actually-good/releases/tag/works) and change the backend. ONLY NEEDED IF PAST LAVA UPD!!!
+ - IT WILL NOT WORK IF YOU'RE PYTHON ANYWHERE USERNAME ISNT 18 characters long (only past lava update)
 
 
 4. Inject App ID
@@ -30,6 +32,7 @@ Protogen - Adding to guide
 - Ctrl+F: OculusPlatformSettings ? Extract as raw
 - Open extracted .dat in HxD
 - Replace Meta App ID with your own from developer.oculus.com
+- HAS TO BE A 16 DIGIT ID OR IT WONT WORK! sadly meta has stopped supporting these, so you js have to be lucky.
 
 5. Photon Auth
 - In game it will just say "Connecting" then "Disconnected" this is because you have not setup photon auth
